@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-13 09:28:18.774165",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "label",
+  "indent",
+  "amount_from",
+  "cb_01",
+  "calc_type",
+  "calc_sources"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "depends_on": "eval:!doc.lft_empty",
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u540d\u79f0"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "indent",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "\u7f29\u8fdb"
+  },
+  {
+   "fieldname": "cb_01",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "default": "Closing Balance",
+   "fieldname": "calc_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u8ba1\u7b97\u65b9\u5f0f",
+   "options": "\nClosing Balance\nCalculate Rows"
+  },
+  {
+   "columns": 5,
+   "depends_on": "eval:in_list(['Closing Balance','Calculate Rows'], doc.calc_type)",
+   "fieldname": "calc_sources",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "\u8ba1\u7b97\u6765\u6e90",
+   "mandatory_depends_on": "eval:in_list(['Closing Balance','Calculate Rows'], doc.calc_type)"
+  },
+  {
+   "columns": 1,
+   "default": "Balance",
+   "fieldname": "amount_from",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Amount From",
+   "options": "Balance\nCredit\nDebit"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-03-14 17:02:06.238683",
+ "modified_by": "Administrator",
+ "module": "Zelin Accounting",
+ "name": "Profit and Loss Statement Settings Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-12 15:14:47.840937",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "asset_row",
+  "column_break_bekm2",
+  "liability_row",
+  "column_break_ajdro",
+  "equity_row",
+  "section_break_8tig1",
+  "items"
+ ],
+ "fields": [
+  {
+   "fieldname": "asset_row",
+   "fieldtype": "Int",
+   "label": "\u8d44\u4ea7\u5408\u8ba1\u884c"
+  },
+  {
+   "fieldname": "column_break_bekm2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "liability_row",
+   "fieldtype": "Int",
+   "label": "\u8d1f\u503a\u5408\u8ba1\u884c"
+  },
+  {
+   "fieldname": "column_break_ajdro",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "equity_row",
+   "fieldtype": "Int",
+   "label": "\u6743\u76ca\u5408\u8ba1\u884c"
+  },
+  {
+   "fieldname": "section_break_8tig1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "\u9879\u76ee\u8bbe\u5b9a",
+   "options": "Balance Sheet Settings Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-12-08 10:44:17.240196",
+ "modified_by": "Administrator",
+ "module": "Zelin Accounting",
+ "name": "Balance Sheet Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

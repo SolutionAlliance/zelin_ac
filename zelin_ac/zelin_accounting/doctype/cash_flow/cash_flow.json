@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{company}_{fiscal_year}_{month}",
+ "creation": "2023-12-10 20:56:48.092166",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "column_break_yj2lr",
+  "fiscal_year",
+  "column_break_a1f21",
+  "month",
+  "section_break_k11kx",
+  "get_cash_flow_items",
+  "items",
+  "amended_from",
+  "section_break_w6xue",
+  "cash_flow_subtotal"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_yj2lr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fiscal_year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Fiscal Year",
+   "options": "Fiscal Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_a1f21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Month",
+   "options": "\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_k11kx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.company&&doc.fiscal_year&&doc.month",
+   "fieldname": "get_cash_flow_items",
+   "fieldtype": "Button",
+   "label": "Get Cash Flow Items"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Cash Flow Items",
+   "no_copy": 1,
+   "options": "Cash Flow Item"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cash Flow",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_w6xue",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.items",
+   "fieldname": "cash_flow_subtotal",
+   "fieldtype": "Table",
+   "label": "Cash Flow Subtotal",
+   "no_copy": 1,
+   "options": "Cash Flow Subtotal",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-01 18:19:57.167567",
+ "modified_by": "Administrator",
+ "module": "Zelin Accounting",
+ "name": "Cash Flow",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

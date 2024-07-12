@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:code",
+ "creation": "2023-12-10 20:39:03.276010",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "code",
+  "cash_flow_name",
+  "cash_flow_type",
+  "column_break_a45nw",
+  "formula",
+  "is_outflow",
+  "report_sequence",
+  "party_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cash Flow Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "cash_flow_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Cash Flow Name"
+  },
+  {
+   "fieldname": "cash_flow_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Cash Flow Type",
+   "options": "\n\u4e00\u3001\u7ecf\u8425\u6d3b\u52a8\u4ea7\u751f\u7684\u73b0\u91d1\u6d41\u91cf:\n\u4e8c\u3001\u6295\u8d44\u6d3b\u52a8\u4ea7\u751f\u7684\u73b0\u91d1\u6d41\u91cf:\n\u4e09\u3001\u7b79\u8d44\u6d3b\u52a8\u4ea7\u751f\u7684\u73b0\u91d1\u6d41\u91cf:\n\u56db\u3001\u73b0\u91d1\u51c0\u589e\u52a0\u989d\n\u4e94\u3001\u671f\u672b\u73b0\u91d1\u4f59\u989d"
+  },
+  {
+   "fieldname": "column_break_a45nw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "formula",
+   "fieldtype": "Select",
+   "label": "Formula",
+   "options": "\ntype_subtotal\nlast_period_balance\nabove_subtotal"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_outflow",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Is Outflow"
+  },
+  {
+   "fieldname": "report_sequence",
+   "fieldtype": "Int",
+   "label": "Report Sequence"
+  },
+  {
+   "description": "\u6536\u4ed8\u6b3e\u51ed\u8bc1\u5f80\u6765\u7c7b\u578b\u9ed8\u8ba4\u7684\u73b0\u91d1\u6d41\u91cf\u7f16\u7801",
+   "fieldname": "party_type",
+   "fieldtype": "Select",
+   "label": "Default Party Type",
+   "options": "\nCustomer\nSupplier\nShareholder\nEmployee"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 18:04:28.531967",
+ "modified_by": "Administrator",
+ "module": "Zelin Accounting",
+ "name": "Cash Flow Code",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "code,is_outflow",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "cash_flow_name",
+ "track_changes": 1
+}

@@ -1,0 +1,125 @@
+[{
+    "doctype": "Custom Field",
+    "dt": "Material Request",
+    "fieldname": "reason_code",
+    "fieldtype": "Link",
+    "options":"Material Issue Reason Code",
+    "insert_after": "schedule_date",
+    "label": "Material Issue Reason Code",
+    "depends_on": "eval:doc.material_request_type ==='Material Issue'",    
+    "modified": "2023-12-10 22:12:02.049023",
+    "name": "Material Request-reason_code"
+   },
+   {
+    "doctype": "Custom Field",
+    "dt": "Stock Entry",
+    "fieldname": "reason_code",
+    "fieldtype": "Link",
+    "options":"Material Issue Reason Code",
+    "insert_after": "stock_entry_type",
+    "label": "Material Movement Reason Code",
+    "depends_on": "eval:in_list(['Material Issue','Material Receipt'], doc.stock_entry_type)", 
+    "mandatory_depends_on": "eval:in_list(['Material Issue','Material Receipt'], doc.stock_entry_type)",
+    "modified": "2024-3-14 22:12:02.049024",
+    "name": "Stock Entry-reason_code"
+   },
+   {
+    "doctype": "Custom Field",
+    "dt": "Stock Entry",
+    "fieldname": "expense_account",
+    "fieldtype": "Link",
+    "options":"Account",
+    "insert_after": "reason_code",
+    "label": "Expense Account",
+    "depends_on": "eval:doc.reason_code",    
+    "modified": "2023-12-10 22:12:02.049023",
+    "name": "Stock Entry-expense_account"
+   },
+   {
+    "doctype": "Custom Field",
+    "dt": "Account",
+    "fieldname": "cash_flow_code",
+    "fieldtype": "Link",
+    "options":"Cash Flow Code",
+    "insert_after": "balance_must_be",
+    "label": "Default Cash Flow Code",
+    "modified": "2023-12-10 22:15:02.049023",
+    "name": "Account-cash_flow_code"
+   },
+   {
+    "doctype": "Custom Field",
+    "dt": "Customer",
+    "fieldname": "cash_flow_code",
+    "fieldtype": "Link",
+    "options":"Cash Flow Code",
+    "insert_after": "default_bank_account",
+    "label": "Default Cash Flow Code",
+    "modified": "2023-12-16 22:15:02.049023",
+    "name": "Customer-cash_flow_code"
+   },
+   {
+    "doctype": "Custom Field",
+    "dt": "Supplier",
+    "fieldname": "cash_flow_code",
+    "fieldtype": "Link",
+    "options":"Cash Flow Code",
+    "insert_after": "default_bank_account",
+    "label": "Default Cash Flow Code",
+    "modified": "2023-12-16 22:15:02.049023",
+    "name": "Supplier-cash_flow_code"
+   },
+   {
+    "doctype": "Custom Field",
+    "dt": "Company",
+    "fieldname": "sb_production_cost_account",
+    "fieldtype": "Section Break",    
+    "insert_after": "expenses_included_in_valuation",
+    "label": "Production Cost Account",
+    "modified": "2023-12-30 22:15:02.049023",
+    "name": "Company-sb_production_cost_account"
+   },
+   {
+    "doctype": "Custom Field",
+    "dt": "Company",
+    "fieldname": "production_input_account",
+    "fieldtype": "Link",
+    "options":"Account",
+    "insert_after": "sb_production_cost_account",
+    "label": "Production Input Account",
+    "modified": "2023-12-30 22:15:02.049023",
+    "name": "Company-production_input_account"
+   },
+   {
+    "doctype": "Custom Field",
+    "dt": "Company",
+    "fieldname": "production_output_account",
+    "fieldtype": "Link",
+    "options":"Account",
+    "insert_after": "production_input_account",
+    "label": "Production Output Account",
+    "modified": "2023-12-30 22:15:02.049023",
+    "name": "Company-production_output_account"
+   },
+   {
+    "doctype": "Custom Field",
+    "dt": "Purchase Taxes and Charges",
+    "fieldname": "actual_tax_amount",
+    "fieldtype": "Float",
+    "depends_on":"eval:doc.charge_type !=='Actual'",
+    "insert_after": "tax_amount",
+    "label": "Actual Tax Amount",
+    "modified": "2023-12-30 22:18:02.049026",
+    "name": "Purchase Taxes and Charges-actual_tax_amount"
+   },
+   {
+    "doctype": "Custom Field",
+    "dt": "Sales Taxes and Charges",
+    "fieldname": "actual_tax_amount",
+    "fieldtype": "Float",
+    "depends_on":"eval:doc.charge_type !=='Actual'",
+    "insert_after": "tax_amount",
+    "label": "Actual Tax Amount",
+    "modified": "2023-12-30 22:18:02.049025",
+    "name": "Sales Taxes and Charges-actual_tax_amount"
+   }
+]

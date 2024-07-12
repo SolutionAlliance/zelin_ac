@@ -1,0 +1,228 @@
+{
+  "items": [
+    {
+      "idx": 1,
+      "label": "一、业务收入",
+      "indent": 0,
+      "calc_type": "Closing Balance",
+      "calc_sources": "5001,5051"
+    },
+    {
+      "idx": 2,
+      "label": "减：业务成本",
+      "indent": 0,
+      "calc_type": "Closing Balance",
+      "calc_sources": "5401,5402"
+    },
+    {
+      "idx": 3,
+      "label": "税金及附加",
+      "indent": 0,
+      "calc_type": "Closing Balance",
+      "calc_sources": "5403"
+    },
+    {
+      "idx": 4,
+      "label": "其中：消费税",
+      "indent": 1,
+      "calc_type": "Closing Balance",
+      "calc_sources": "222103"
+    },
+    {
+      "idx": 5,
+      "label": "营业税",
+      "indent": 1,
+      "calc_type": "Closing Balance",
+      "calc_sources": "222104"
+    },
+    {
+      "idx": 6,
+      "label": "城市维护建设税",
+      "indent": 1,
+      "calc_type": "Closing Balance",
+      "calc_sources": "222108"
+    },
+    {
+      "idx": 7,
+      "label": "资源税",
+      "indent": 1,
+      "calc_type": "Closing Balance",
+      "calc_sources": "222105"
+    },
+    {
+      "idx": 8,
+      "label": "土地增值税",
+      "indent": 1,
+      "calc_type": "Closing Balance",
+      "calc_sources": "222107"
+    },
+    {
+      "idx": 9,
+      "label": " 城镇土地使用税、房产税、车船税、印花税",
+      "indent": 1,
+      "calc_type": "Closing Balance",
+      "calc_sources": "222109,222110,222111,222117,"
+    },
+    {
+      "idx": 10,
+      "label": "教育费附加、矿产资源补偿费、排污费",
+      "indent": 1,
+      "calc_type": "Closing Balance",
+      "calc_sources": "222113,222114,222115,222116"
+    },
+    {
+      "idx": 11,
+      "label": "销售费用",
+      "indent": 0,
+      "calc_type": "Closing Balance",
+      "calc_sources": "560101,560102,560103,560104,560105,560106,560107,560108,560109,560110,560111,560112,560113,560114,560115,560116,560118,560118,560119,560120"
+    },
+    {
+      "idx": 12,
+      "label": "其中：商品维修费",
+      "indent": 1,
+      "calc_type": "Closing Balance",
+      "calc_sources": "560103"
+    },
+    {
+      "idx": 13,
+      "label": "广告费和业务宣传费",
+      "indent": 1,
+      "calc_type": "Closing Balance",
+      "calc_sources": "560115,560116"
+    },
+    {
+      "idx": 14,
+      "label": "管理费用",
+      "indent": 0,
+      "calc_type": "Closing Balance",
+      "calc_sources": "560201,560202,560203,560204,560205,560206,560207,560208,560209,560210,560211,560212,560213,560214,560215,560216,560217,560218,560219,560220"
+    },
+    {
+      "idx": 15,
+      "label": "其中：开办费",
+      "indent": 1,
+      "calc_type": "Closing Balance",
+      "calc_sources": "560209"
+    },
+    {
+      "idx": 16,
+      "label": "业务招待费",
+      "indent": 1,
+      "calc_type": "Closing Balance",
+      "calc_sources": "560202"
+    },
+    {
+      "idx": 17,
+      "label": "研究费用",
+      "indent": 1,
+      "calc_type": "Closing Balance",
+      "calc_sources": "560210"
+    },
+    {
+      "idx": 18,
+      "label": "财务费用",
+      "indent": 0,
+      "calc_type": "Closing Balance",
+      "calc_sources": "560301,560302,560303,560304,560305,560306"
+    },
+    {
+      "idx": 19,
+      "label": "其中：利息费用（收入以“-”号填列）",
+      "indent": 1,
+      "calc_type": "Closing Balance",
+      "calc_sources": "560301"
+    },
+    {
+      "idx": 20,
+      "label": "加：投资收益（亏损以“-”号填列）",
+      "indent": 0,
+      "calc_type": "Closing Balance",
+      "calc_sources": "5111"
+    },
+    {
+      "idx": 21,
+      "label": "二、营业利润（亏损以“-”号填列）",
+      "indent": 0,
+      "calc_type": "Calculate Rows",
+      "calc_sources": "1,-2,-3,-11,-14,-18,20"
+    },
+    {
+      "idx": 22,
+      "label": "加：营业外收入",
+      "indent": 0,
+      "calc_type": "Closing Balance",
+      "calc_sources": "530101,530102,530103,530104,530105,530106"
+    },
+    {
+      "idx": 23,
+      "label": "其中：政府补助",
+      "indent": 1,
+      "calc_type": "Closing Balance",
+      "calc_sources": "530102"
+    },
+    {
+      "idx": 24,
+      "label": "减：营业外支出",
+      "indent": 0,
+      "calc_type": "Closing Balance",
+      "calc_sources": "571101,571102,571103,571104,571105,571106,571107,571108,571109,571110,571111,571112"
+    },
+    {
+      "idx": 25,
+      "label": "其中：坏账损失",
+      "indent": 1,
+      "calc_type": "Closing Balance",
+      "calc_sources": "571105"
+    },
+    {
+      "idx": 26,
+      "label": "无法收回的长期债券投资损失",
+      "indent": 1,
+      "calc_type": "Closing Balance",
+      "calc_sources": "571107"
+    },
+    {
+      "idx": 27,
+      "label": "无法收回的长期股权投资损失",
+      "indent": 1,
+      "calc_type": "Closing Balance",
+      "calc_sources": "571108"
+    },
+    {
+      "idx": 28,
+      "label": "自然灾害等不可抗力因素造成的损失",
+      "indent": 1,
+      "calc_type": "Closing Balance",
+      "calc_sources": "571109"
+    },
+    {
+      "idx": 29,
+      "label": "税收滞纳金",
+      "indent": 1,
+      "calc_type": "Closing Balance",
+      "calc_sources": "571110"
+    },
+    {
+      "idx": 30,
+      "label": "三、利润总额（亏损总额以“-”号填列）",
+      "indent": 0,
+      "calc_type": "Calculate Rows",
+      "calc_sources": "21,22,-24"
+    },
+    {
+      "idx": 31,
+      "label": "减：所得税费用",
+      "indent": 0,
+      "calc_type": "Closing Balance",
+      "calc_sources": "5801"
+    },
+    {
+      "idx": 32,
+      "label": "四、净利润（净亏损以“-”号填列）",
+      "indent": 0,
+      "calc_type": "Calculate Rows",
+      "calc_sources": "30,-31"
+    }
+  ]
+}

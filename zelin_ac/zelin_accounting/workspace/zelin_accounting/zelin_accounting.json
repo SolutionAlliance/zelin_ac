@@ -1,0 +1,133 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"27aE6qMRNU\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u8d22\u52a1\u62a5\u8868</span>\",\"col\":12}},{\"id\":\"pq69Iywr6X\",\"type\":\"card\",\"data\":{\"card_name\":\"\u62a5\u8868\",\"col\":4}},{\"id\":\"mlkknfg8cR\",\"type\":\"card\",\"data\":{\"card_name\":\"\u8bbe\u7f6e\",\"col\":4}},{\"id\":\"kU2hbVZnEf\",\"type\":\"card\",\"data\":{\"card_name\":\"\u6708\u7ed3\",\"col\":4}}]",
+ "creation": "2023-12-08 10:37:07.389424",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Zelin Accounting",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u8bbe\u7f6e",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Balance Sheet Settings",
+   "link_count": 0,
+   "link_to": "Balance Sheet Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Profit and Loss Statement Settings",
+   "link_count": 0,
+   "link_to": "Profit and Loss Statement Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cash Flow Code",
+   "link_count": 0,
+   "link_to": "Cash Flow Code",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Material Issue Reason Code",
+    "link_count": 0,
+    "link_to": "Material Issue Reason Code",
+    "link_type": "DocType",
+    "onboard": 0,
+    "type": "Link"
+   },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u62a5\u8868",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "\u8d44\u4ea7\u8d1f\u503a\u8868\uff08\u4e24\u680f\u5f0f\uff09",
+   "link_count": 0,
+   "link_to": "Fin Balance Sheet",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "\u5229\u6da6\u8868",
+   "link_count": 0,
+   "link_to": "Fin Profit and Loss Statement",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cash Flow",
+   "link_count": 0,
+   "link_to": "Cash Flow",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u6708\u7ed3",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Order Settlement",
+   "link_count": 0,
+   "link_to": "Order Settlement",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-03-14 18:14:04.252364",
+ "modified_by": "yuxinyong@163.com",
+ "module": "Zelin Accounting",
+ "name": "Zelin Accounting",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 2.0,
+ "shortcuts": [],
+ "title": "Zelin Accounting"
+}

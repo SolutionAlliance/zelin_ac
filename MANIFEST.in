@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include zelin_ac *.css
+recursive-include zelin_ac *.csv
+recursive-include zelin_ac *.html
+recursive-include zelin_ac *.ico
+recursive-include zelin_ac *.js
+recursive-include zelin_ac *.json
+recursive-include zelin_ac *.md
+recursive-include zelin_ac *.png
+recursive-include zelin_ac *.py
+recursive-include zelin_ac *.svg
+recursive-include zelin_ac *.txt
+recursive-exclude zelin_ac *.pyc

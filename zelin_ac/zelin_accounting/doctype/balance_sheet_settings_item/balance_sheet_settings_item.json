@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-12 15:13:55.822442",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "lft_title",
+  "lft_empty",
+  "lft_bold",
+  "lft_name",
+  "lft_indent",
+  "lft_calc_type",
+  "lft_calc_sources",
+  "column_break_7w6wt",
+  "rgt_title",
+  "rgt_empty",
+  "rgt_bold",
+  "rgt_name",
+  "rgt_indent",
+  "rgt_calc_type",
+  "rgt_calc_sources"
+ ],
+ "fields": [
+  {
+   "fieldname": "lft_title",
+   "fieldtype": "Heading",
+   "label": "\u8d44\u4ea7"
+  },
+  {
+   "default": "0",
+   "fieldname": "lft_empty",
+   "fieldtype": "Check",
+   "label": "\u7a7a\u767d"
+  },
+  {
+   "default": "0",
+   "fieldname": "lft_bold",
+   "fieldtype": "Check",
+   "label": "\u7c97\u4f53\u663e\u793a"
+  },
+  {
+   "columns": 1,
+   "depends_on": "eval:!doc.lft_empty",
+   "fieldname": "lft_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u540d\u79f0"
+  },
+  {
+   "default": "0",
+   "fieldname": "lft_indent",
+   "fieldtype": "Int",
+   "label": "\u7f29\u8fdb"
+  },
+  {
+   "columns": 1,
+   "default": "Closing Balance",
+   "depends_on": "eval:!doc.lft_empty",
+   "fieldname": "lft_calc_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u8ba1\u7b97\u65b9\u5f0f",
+   "options": "\nClosing Balance\nCalculate Rows"
+  },
+  {
+   "columns": 3,
+   "depends_on": "eval:!doc.lft_empty",
+   "fieldname": "lft_calc_sources",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "\u8ba1\u7b97\u6765\u6e90"
+  },
+  {
+   "fieldname": "column_break_7w6wt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rgt_title",
+   "fieldtype": "Heading",
+   "label": "\u8d1f\u503a\u548c\u6743\u76ca"
+  },
+  {
+   "default": "0",
+   "fieldname": "rgt_empty",
+   "fieldtype": "Check",
+   "label": "\u7a7a\u767d"
+  },
+  {
+   "default": "0",
+   "fieldname": "rgt_bold",
+   "fieldtype": "Check",
+   "label": "\u7c97\u4f53\u663e\u793a"
+  },
+  {
+   "columns": 1,
+   "depends_on": "eval:!doc.rgt_empty",
+   "fieldname": "rgt_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u540d\u79f0"
+  },
+  {
+   "default": "0",
+   "fieldname": "rgt_indent",
+   "fieldtype": "Int",
+   "label": "\u7f29\u8fdb"
+  },
+  {
+   "columns": 1,
+   "default": "Closing Balance",
+   "depends_on": "eval:!doc.rgt_empty",
+   "fieldname": "rgt_calc_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u8ba1\u7b97\u65b9\u5f0f",
+   "options": "\nClosing Balance\nCalculate Rows"
+  },
+  {
+   "columns": 3,
+   "depends_on": "eval:!doc.rgt_empty",
+   "fieldname": "rgt_calc_sources",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "\u8ba1\u7b97\u6765\u6e90"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-12-08 09:48:56.989651",
+ "modified_by": "Administrator",
+ "module": "Zelin Accounting",
+ "name": "Balance Sheet Settings Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

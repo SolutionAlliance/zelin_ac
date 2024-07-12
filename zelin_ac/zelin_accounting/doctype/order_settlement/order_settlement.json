@@ -1,0 +1,186 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{company}_{fiscal_year}_{month}",
+ "creation": "2023-12-11 17:08:22.527363",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "column_break_yj2lr",
+  "workstation",
+  "column_break_pdpes",
+  "fiscal_year",
+  "column_break_a1f21",
+  "month",
+  "section_break_k11kx",
+  "get_items",
+  "items",
+  "section_break_1vil6",
+  "expenses",
+  "amended_from",
+  "background_job_setting_section",
+  "in_background_job"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_yj2lr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fiscal_year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Fiscal Year",
+   "options": "Fiscal Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_a1f21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Month",
+   "options": "\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_k11kx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.company&&doc.fiscal_year&&doc.month",
+   "fieldname": "get_items",
+   "fieldtype": "Button",
+   "label": "Get Order Settlement Items"
+  },
+  {
+   "description": "Finish goods receipt via Stock Entry with type Manufacturing",
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Order Settlement Items",
+   "no_copy": 1,
+   "options": "Order Settlement Item"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Order Settlement",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_1vil6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "expenses",
+   "fieldtype": "Table",
+   "label": "Allocatable Expenses",
+   "no_copy": 1,
+   "options": "Order Settlement Expense"
+  },
+  {
+   "fieldname": "column_break_pdpes",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "workstation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Workstations",
+   "options": "Workstation"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "background_job_setting_section",
+   "fieldtype": "Section Break",
+   "label": "Background Job Setting"
+  },
+  {
+   "default": "0",
+   "description": "\u52fe\u9009\u6b64\u6846\u6216\u7ed3\u7b97\u660e\u7ec6\u884c\u6570\u8d8550\uff0c\u63d0\u4ea4\u65f6\u542f\u52a8\u540e\u53f0\u8fd0\u884c",
+   "fieldname": "in_background_job",
+   "fieldtype": "Check",
+   "label": "In Background Job"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-03-11 15:51:16.071179",
+ "modified_by": "Administrator",
+ "module": "Zelin Accounting",
+ "name": "Order Settlement",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

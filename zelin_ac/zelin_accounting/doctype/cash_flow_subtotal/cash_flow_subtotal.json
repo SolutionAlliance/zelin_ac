@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-14 08:46:30.885422",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "code",
+  "cash_flow_name",
+  "cash_flow_type",
+  "column_break_a45nw",
+  "monthly_amount",
+  "yearly_amount"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cash Flow Code"
+  },
+  {
+   "columns": 3,
+   "fieldname": "cash_flow_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Cash Flow Name"
+  },
+  {
+   "columns": 3,
+   "fieldname": "cash_flow_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Cash Flow Type",
+   "options": "\n\u4e00\u3001\u7ecf\u8425\u6d3b\u52a8\u4ea7\u751f\u7684\u73b0\u91d1\u6d41\u91cf:\n\u4e8c\u3001\u6295\u8d44\u6d3b\u52a8\u4ea7\u751f\u7684\u73b0\u91d1\u6d41\u91cf:\n\u4e09\u3001\u7b79\u8d44\u6d3b\u52a8\u4ea7\u751f\u7684\u73b0\u91d1\u6d41\u91cf:\n\u56db\u3001\u73b0\u91d1\u51c0\u589e\u52a0\u989d\n\u4e94\u3001\u671f\u672b\u73b0\u91d1\u4f59\u989d"
+  },
+  {
+   "fieldname": "column_break_a45nw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "yearly_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Yearly Amount"
+  },
+  {
+   "columns": 1,
+   "fieldname": "monthly_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Monthly Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-12-16 13:35:54.578953",
+ "modified_by": "Administrator",
+ "module": "Zelin Accounting",
+ "name": "Cash Flow Subtotal",
+ "owner": "Administrator",
+ "permissions": [],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "cash_flow_name",
+ "track_changes": 1
+}
